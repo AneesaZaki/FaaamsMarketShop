@@ -124,6 +124,8 @@ export default function CartItems (props) {
 
   const openCheckout = () => {
     props.setCheckout(true)
+    alert("Payment Successfully Done!")
+   
   }
 
     return (<Card className={classes.card}>
@@ -170,7 +172,8 @@ export default function CartItems (props) {
         <div className={classes.checkout}>
           <span className={classes.total}>Total: ${getTotal()}</span>
           {!props.checkout && (auth.isAuthenticated()?
-           <Link to="/checkout">
+            
+            <Link to="/">
             <Button color="secondary" variant="contained" onClick={openCheckout}>Checkout</Button>
            
             </Link>
