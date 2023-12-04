@@ -11,7 +11,7 @@ import {Link, withRouter} from 'react-router-dom'
 import CartIcon from '@material-ui/icons/ShoppingCart'
 import Badge from '@material-ui/core/Badge'
 import cart from './../cart/cart-helper'
-
+import Faaams from './../assets/images/faaams.jpg';
 
 
 
@@ -36,7 +36,8 @@ const isPartActive = (history, path) => {
     <Toolbar>
     
       <div>
-      <img src="../assets/images/faaams.jpg" alt="logo" style={{ 'height': '40px', 'borderRadius': '8px' }}/>
+      {/* <img src="../assets/images/faaams.jpg" alt="logo" style={{ 'height': '40px', 'borderRadius': '8px' }}/> */}
+      <img src={Faaams} alt="imagelogo" style={{ 'height': '40px', 'borderRadius': '8px' }}/>
       </div>
        
         <Link to="/">

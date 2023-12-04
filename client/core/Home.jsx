@@ -3,6 +3,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box, Container, Grid, Link, Typography } from '@material-ui/core';
 import TechHub from './../assets/images/TechHub.png';
+import Faaams from './../assets/images/faaams.jpg';
+
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -67,7 +69,8 @@ const Footer = () => {
         <Grid item lg={6} md={6} sm={6} xs={12}>
           <div className={classes.intro}>
             <Link to="/">
-              <img src=".././assets/images/faaams.jpg" alt="logo" className={classes.logo} />
+              {/* <img src=".././assets/images/faaams.jpg" alt="logo" className={classes.logo} /> */}
+              <img src={Faaams} alt="imagelogo" className={classes.logo} />
             </Link>
             <Typography color="white">
               &copy; Copyright 2023 Faaams
