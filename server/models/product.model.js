@@ -1,3 +1,5 @@
+// Productmodels.js contains product schema
+
 import mongoose from 'mongoose'
 const ProductSchema = new mongoose.Schema({
   image: {
