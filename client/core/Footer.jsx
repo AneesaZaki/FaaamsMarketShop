@@ -6,6 +6,8 @@ import Container from "@mui/material/Container";
 import { Paragraph } from "../components/Typography"
 import { makeStyles } from '@material-ui/core/styles';
 
+//I changed the colors to red and made sure the font is times new Roman 
+
 const useStyles = makeStyles((theme) => ({
     card: {
       maxWidth: 1000,
@@ -17,8 +19,8 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
       padding: theme.spacing(3, 2.5, 2),
-      color: 'red', // Set the color to maroon
-      fontFamily: 'Times New Roman', // Set the font family to Times New Roman,
+      color: 'red', 
+      fontFamily: 'Times New Roman', 
     },
     media: {
       maxHeight: 700,
