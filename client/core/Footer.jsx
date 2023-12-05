@@ -6,7 +6,7 @@ import Container from "@mui/material/Container";
 import { Paragraph } from "../components/Typography"
 import { makeStyles } from '@material-ui/core/styles';
 
-//I changed the colors to red and made sure the font is times new Roman 
+//changed the colors to red and made sure the font is times new Roman 
 
 const useStyles = makeStyles((theme) => ({
     card: {

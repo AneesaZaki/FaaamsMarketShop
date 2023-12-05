@@ -53,7 +53,7 @@ const CarouselHero = () => {
     slidesToScroll: 1,
     autoplay: true,
   };
-
+    // this is where the Bitmojis code is in the About me page 
   return (
         <>
           <h1 className={classes.heading}>About Us</h1> 
@@ -84,6 +84,8 @@ const CarouselHero = () => {
       );
     };
 
+    //Add the team information 
+
 const AboutUs = () => {
   const classes = useStyles();
 
@@ -96,6 +98,8 @@ const AboutUs = () => {
         { name: 'Farrah Riaz', role: 'Web Designer' },
         { name: 'Samra Mohamed', role: 'Software Developer' },
       ];
+
+      // this is where the information within the boxes are for the About me page. Add more if needed 
 
   return (
     <div>
