@@ -19,9 +19,17 @@ const OrderSchema = new mongoose.Schema({
     type: String,
  
     match: [/.+\@.+\..+/, 'Please fill a valid email address'],
-    
-  },
-  delivery_address: {
+     },
+  
+  // delivery_address: {
+  //   street: {type: String,},
+  //   city: {type: String},
+  //   state: {type: String},
+  //   zipcode: {type: String},
+  //   country: {type: String'}
+  // },
+
+    delivery_address: {
     street: {type: String, required: 'Street is required'},
     city: {type: String, required: 'City is required'},
     state: {type: String},
@@ -34,7 +42,10 @@ const OrderSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
-  user: {type: mongoose.Schema.ObjectId, ref: 'User'}
+
+  // user: {type: mongoose.Schema.ObjectId, ref: 'Users'}
+  
+    user: {type: mongoose.Schema.ObjectId, ref: 'User'}
 })
 
 const Order = mongoose.model('Order', OrderSchema)
