@@ -18,8 +18,6 @@ const App = () => {
 export default App;
 
 
- // Wrap the App component with the hot module loader
- //export default hot(module)(App);
-export default App;
+
 
 
