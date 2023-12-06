@@ -73,7 +73,6 @@ export default defineConfig({
   },
   build: {
     manifest: true,
-    outDir: '../dist/app',
     rollupOptions: {
       input: "./src/main.jsx",
     },
