@@ -70,21 +70,18 @@ export default defineConfig({
      
     },
   },
-  // build: {
-  //   manifest: true,
-  //   rollupOptions: {
-  //     input: "./src/main.jsx",
-  //    outDir: '../dist',
-  //   },
-  // },
-
   build: {
-    outDir: '../dist/app',
     manifest: true,
     rollupOptions: {
-      input: ["./src/main.jsx",'./index.html']
+      input: "./src/main.jsx",
+     outDir: '../dist',
     },
   },
+
+  // build: {
+  //   outDir: '../dist/app',
+   
+  // },
  
 
 });

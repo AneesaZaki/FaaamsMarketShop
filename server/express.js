@@ -14,7 +14,7 @@ import path from 'path'
 const app = express()
 const CURRENT_WORKING_DIR = process.cwd()
 console.log(CURRENT_WORKING_DIR)
-app.use(express.static(path.join(CURRENT_WORKING_DIR, 'dist/app')));
+app.use(express.static(path.join(CURRENT_WORKING_DIR, 'dist')));
 
 
 app.use(express.json());
