@@ -55,6 +55,7 @@ dotenv.config();
 const { PORT = 3000 } = process.env;
 
 export default defineConfig({
+  base: './',
   plugins: [react({
       jsxRuntime: 'classic' // Add this line
     }
